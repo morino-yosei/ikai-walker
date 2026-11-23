@@ -1,0 +1,38 @@
+/* 利用規約・プライバシーポリシーのページ */
+:root {
+  color-scheme: dark;
+  --bg: #0f0d16;
+  --card: #1a1724;
+  --line: rgba(255, 255, 255, 0.1);
+  --text: #e9e6f2;
+  --dim: #a9a3bb;
+  --accent: #b9a2ff;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font: 15px/1.8 system-ui, -apple-system, 'Hiragino Sans', 'Noto Sans JP', 'Yu Gothic UI', sans-serif;
+}
+main { max-width: 720px; margin: 0 auto; padding: 24px 16px 64px; }
+header { border-bottom: 1px solid var(--line); margin-bottom: 24px; padding-bottom: 16px; }
+.game { color: var(--dim); font-size: 13px; margin: 0; }
+h1 { font-size: 24px; margin: 4px 0 8px; }
+.date { color: var(--dim); font-size: 13px; margin: 0; }
+h2 { font-size: 17px; margin: 32px 0 8px; padding-left: 10px; border-left: 3px solid var(--accent); }
+p, li { overflow-wrap: anywhere; }
+ul, ol { padding-left: 1.4em; }
+li { margin: 4px 0; }
+.box { background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: 12px 16px; margin: 12px 0; }
+.box p { margin: 4px 0; }
+table { width: 100%; border-collapse: collapse; margin: 12px 0; font-size: 14px; }
+th, td { border: 1px solid var(--line); padding: 8px 10px; text-align: left; vertical-align: top; }
+th { background: var(--card); white-space: nowrap; }
+a { color: var(--accent); }
+nav { display: flex; flex-wrap: wrap; gap: 8px 16px; margin-top: 40px; padding-top: 16px; border-top: 1px solid var(--line); font-size: 14px; }
+@media (max-width: 480px) {
+  table, tbody, tr, th, td { display: block; }
+  th { border-bottom: none; }
+  tr { margin-bottom: 8px; }
+}
